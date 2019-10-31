@@ -1,0 +1,6 @@
+id=extreme-845-thermals
+name=Extreme Thermals (SDM845)
+version=v1.0 (3500mA)
+versionCode=100
+author=P1N2O
+description=Disable Agressive Thermal Throttling & Enable Fast Charging
