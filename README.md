@@ -1,6 +1,6 @@
 # Extreme Thermals
 
-Disable Agressive Thermal Throttling & Enable Fast Charging
+Disable Agressive Thermal Throttling
 
 
 # Instructions

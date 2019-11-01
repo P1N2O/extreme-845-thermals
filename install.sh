@@ -135,8 +135,6 @@ on_install() {
   # Extend/change the logic to whatever you want
   [ "`getprop | grep -iE 'SDM845|sdm845'`" ] || abort "[FAIL!] Device is not SDM845."
   ui_print "- Extracting module files"
-  ui_print "- Replacing Thermals"
-  ui_print "- Enabling Fast Charging"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
 }
 
@@ -147,7 +145,6 @@ on_install() {
 set_permissions() {
   # The following is the default rule, DO NOT remove
   set_perm_recursive $MODPATH 0 0 0755 0644
-  set_perm_recursive  $MODPATH/system/etc/init.d       0     0       0755      0755
 
   # Here are some examples:
   # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
